@@ -1,5 +1,5 @@
 # Project_Youtube
-Project Title: YouTube Data Harvesting and Warehousing
+**Project Title: YouTube Data Harvesting and Warehousing**
 
 **Project Overview:**
     The project involves collecting data from YouTube using the YouTube Data API, storing the collected data in both MongoDB and MySQL databases, and providing an   interface using Streamlit to view and analyze the collected data.
@@ -8,10 +8,8 @@ Project Title: YouTube Data Harvesting and Warehousing
 
   **1.	API Connection and Data Retrieval:**
   
-      •	Use the Google API Python Client to connect to the YouTube Data API.
-      
-      •	Implement functions to retrieve channel information, playlist details, video information, and comments from the YouTube channel.
-      
+      •	Use the Google API Python Client to connect to the YouTube Data API.      
+      •	Implement functions to retrieve channel information, playlist details, video information, and comments from the YouTube channel.      
       •	Store the retrieved data in MongoDB.
       
   **2.	Data Warehousing in MySQL:**
