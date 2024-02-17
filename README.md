@@ -21,8 +21,7 @@
       •	Allow users to trigger the data collection process for required YouTube channel, store it in MongoDB, and transfer it to MySQL.
       
       
-  **4.	Data Analysis Queries:**
-  
+  **4.	Data Analysis Queries:**  
       •	Write SQL queries to analyze the stored data for various insights.      
       •	Implement functionality in the Streamlit app to execute these queries based on user selection.      
       •	Display the query results in the Streamlit app for user analysis.
