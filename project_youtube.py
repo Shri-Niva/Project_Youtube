@@ -1,3 +1,7 @@
+#YOUTUBE DATA HARVESTING AND WAREHOUSING
+
+#Library part
+
 # activating google client to run the google api-->pip install google-api-python-client
 from googleapiclient.discovery import build
 
@@ -19,7 +23,7 @@ import mysql.connector
 # To import streamlit--->pip install streamlit
 import streamlit as st
 
-
+#API KEY connection Interface
 #creating user defined function for 'API KEY connection' to access data from youtube 
 def api_connect():
     api_id='AIzaSyDxQDFSWeBbuYzvnTu97ym_PqJPCMCVLtg'
@@ -102,7 +106,6 @@ def get_videos_ids(channel_id):
 
 
 #user defined function to get video information using 'videoid' of the video in the specific youtube channel
-
 def get_video_info(video_ids):
     video_data=[]
     for video_id in video_ids:
@@ -268,7 +271,6 @@ def channel_table(mydb):
 
 
 #create playlist Table
-
 def playlist_table(mydb):
     # Create a cursor object
     mycursor=mydb.cursor()
@@ -469,8 +471,7 @@ def comments_table(mydb):
 
 
 
-#User defined fuction to concardinate all the from table
-            
+#User defined fuction to concardinate all the from table            
 def create_tables():
     mydb = connect_to_database()
     channel_table(mydb)
@@ -479,9 +480,9 @@ def create_tables():
     comments_table(mydb)
     return 'Table Created Successfully'
 
+#streamlit part
 
-#Streamlit Script to create user defined function of data frame for channel,playlist,video,comment-table 
-
+#Streamlit Python Script to create user defined function of data frame for channel,playlist,video,comment-table 
 import streamlit as st
 def show_channel_tabls():
     ch_list=[]
@@ -530,7 +531,7 @@ def show_comments_table():
 
 
 
-#streamlit part
+#streamlit python script to create webpage interface
 with st.container():
     st.write("<h1 style='text-align: center; color: green;'>YOUTUBE DATA HARVESTING AND WAREHOUSING</h1>", unsafe_allow_html=True)
 
